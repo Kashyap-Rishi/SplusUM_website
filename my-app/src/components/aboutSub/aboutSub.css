@@ -1,127 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
 
-.aboutsub_section{
-
-    
-  
-    padding: 0 10% ;
+.aboutsub_section {
+  padding: 0 10%;
 
   justify-content: center;
   margin: 0 auto;
-    padding: 0 8.5%;
+  padding: 0 8.5%;
 
-    display: flex;
-    
-   font-family: 'Poppins', sans-serif;
+  display: flex;
 
+  font-family: "Poppins", sans-serif;
 }
-.Headingpart_aboutsub{
-    color: #000000;
-   
-    font-size: 1.7rem;
-    font-weight: 500;
-    text-transform: none;
-    line-height: 0em;
+.Headingpart_aboutsub {
+  color: #000000;
 
-    
-    width:30%;
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-transform: none;
+  line-height: 1em;
+
+  width: 30%;
 }
 
-.Contentpart_aboutsub{
-    
-
-    width: 50%;
-    
+.Contentpart_aboutsub {
+  width: 50%;
 }
 
-.Contentpart_aboutsub p{
+.Contentpart_aboutsub p {
   letter-spacing: 0.02rem;
   font-size: 14px;
   line-height: 22px;
-    width:90%;
+  width: 90%;
 }
 
 .cont_btn {
-    
-   
-    overflow: hidden;
-    border-style: solid;
-    border-width: 1px 1px 1px 1px;
-    border-color: #0000002E;
-    box-shadow: inset 0 0px 0 -1px black;
-    transition: box-shadow 0.6s ease-in-out;
- background-color: #F8F8F8;
-    
-    font-family: "Poppins", Sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1.3px;
-    padding: 27px 100px ;
-    outline: none;
-    cursor: pointer;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #0000002e;
+  box-shadow: inset 0 0px 0 -1px black;
+  transition: box-shadow 0.6s ease-in-out;
+  background-color: #f8f8f8;
+
+  font-family: "Poppins", Sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  padding: 27px 100px;
+  outline: none;
+  cursor: pointer;
+}
+.cont_btn::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "LET'S BUILD";
+  transition: all 0.6s;
+}
+.cont_btn::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "CONTACT US";
+  transition: all 0.6s;
+  color: white;
+}
+.cont_btn:hover::before {
+  top: -100%;
+}
+.cont_btn:hover::after {
+  top: 0%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .aboutsub_section {
+    padding: 6em 2% 0;
   }
-  .cont_btn::before {
+}
+@media only screen and (max-width: 767px) {
+  .aboutsub_section {
+    padding-left: 4%;
+    padding-right: 4%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
+    flex-direction: column;
+  }
+  .Headingpart_aboutsub {
     width: 100%;
-    height: 100%;
-    content: "LET'S BUILD";
-    transition: all 0.6s;
-  }
-  .cont_btn::after {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    content: 'CONTACT US';
-    transition: all 0.6s;
-    color:white;
-  }
-  .cont_btn:hover::before {
-    
-    top: -100%;
-  }
-  .cont_btn:hover::after {
-    top: 0%;
+    margin-bottom: 2.2em;
   }
 
-  @media only screen and (max-width:1024px) {
-    .aboutsub_section{
-        padding: 6em 2% 0;   
-    }
- 
-}
-@media only screen and (max-width:767px) {
-    .aboutsub_section{
-      padding-left: 4%;
-      padding-right: 4%;
-        display: flex;
-        flex-direction: column;
-       
-    }
-    .Headingpart_aboutsub{
-        width: 100%;
-        margin-bottom: 2.2em;
-    }
- 
-    .Headingpart_aboutsub h1{
-        display: inline-block;
-        padding-right: 10px;
-    }
-    .Contentpart_aboutsub{
-        width:100%;
-        margin-bottom: 2.7em;
-    }
-    .Contentpart_aboutsub p{
-        width:100%;
-    }
+  .Headingpart_aboutsub h1 {
+    display: inline-block;
+    padding-right: 10px;
+  }
+  .Contentpart_aboutsub {
+    width: 100%;
+    margin-bottom: 2.7em;
+  }
+  .Contentpart_aboutsub p {
+    width: 100%;
+  }
 }
